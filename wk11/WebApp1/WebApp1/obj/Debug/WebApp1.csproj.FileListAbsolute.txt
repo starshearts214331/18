@@ -1,0 +1,5 @@
+E:\Acad2015\Course1052\Javascript1052\wk11\WebApp1\WebApp1\bin\WebApp1.dll.config
+E:\Acad2015\Course1052\Javascript1052\wk11\WebApp1\WebApp1\bin\WebApp1.dll
+E:\Acad2015\Course1052\Javascript1052\wk11\WebApp1\WebApp1\bin\WebApp1.pdb
+E:\Acad2015\Course1052\Javascript1052\wk11\WebApp1\WebApp1\obj\Debug\WebApp1.dll
+E:\Acad2015\Course1052\Javascript1052\wk11\WebApp1\WebApp1\obj\Debug\WebApp1.pdb

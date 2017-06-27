@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Javascript 功能</title>
+</head>
+<body>
+    <h2>Javascript 功能</h2>
+
+    <h3 id="Ex1">JavaScript can change HTML content.</h3>
+    
+    <button type="button" onclick='document.getElementById("Ex1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <hr />
+    <h3>JavaScript can change HTML attributes.</h3>
+    
+
+    <p>In this case JavaScript changes the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+    <img id="myImage" src="pic_bulboff.gif" style="width: 100px" />
+
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+    <hr />
+    <h3 id="demo">JavaScript can change the style of an HTML element.</h3>
+
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me(35)!</button>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='25px'">Click Me(25)!</button>
+
+</body>
+</html>

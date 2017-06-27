@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage3.master.cs" Inherits="MasterPage3" %>
+
+<!DOCTYPE html>
+<html lang="zh">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - 我的 ASP.NET  應用程式</title>
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">      
+       
+    </asp:PlaceHolder>
+    
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form id="Form1" runat="server">
+   
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">
+                    <a id="A1" runat="server" href="~/">您的標誌在此</a></p>
+            </div>
+            <div class="float-right">
+                <section id="login">
+                    <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul>
+                                <li><a id="registerLink" runat="server" href="~/Account/Register">註冊</a></li>
+                                <li><a id="loginLink" runat="server" href="~/Account/Login">登入</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <p>
+                                Hello, <a id="A2" runat="server" class="username" href="~/Account/Manage" title="Manage your account">
+                                    <asp:LoginName ID="LoginName1" runat="server" CssClass="username" />
+                                </a>!
+                                <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="登出" LogoutPageUrl="~/" />
+                            </p>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </section>
+                <nav>
+                    <ul id="menu">
+                        <li><a id="A3" runat="server" href="~/">首頁</a></li>
+                        <li><a id="A4" runat="server" href="~/About">關於</a></li>
+                        <li><a id="A5" runat="server" href="~/Contact">連絡人</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>
+                    &copy; <%: DateTime.Now.Year %> - 我的 ASP.NET 應用程式
+                </p>
+            </div>
+        </div>
+    </footer>
+    </form>
+</body>
+</html>

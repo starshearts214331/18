@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> 第一頁 </title>
+    <!-- CSS wk102.html -->
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
+      p {
+        font-family: verdana;
+        font-size: 20px;
+        }
+    </style>
+    <!-- wk104 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+  </head>
+  <body>
+
+      <h1>My First Heading</h1>
+
+      <p> p tag  My first paragraph.</p>
+<!-- wk103.html -->
+      <h2>What Can JavaScript Do?</h2>
+
+<p id="demo">原始文字</p>
+
+<button type="button"
+onclick='document.getElementById("demo").innerHTML
+= "Click 後出現 Hello JavaScript!"'>Click Me!</button>
+
+<p>p tag If you click on me, I will disappear.</p>
+<p>p tag Click me away!</p>
+<p>ptag Click me too!</p>
+  </body>
+</html>

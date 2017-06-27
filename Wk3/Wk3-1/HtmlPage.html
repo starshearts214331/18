@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script>
+        document.write("092012 CS Jou <br/>");
+        document.write("<table border=1>");
+        var i;
+        var j;
+        for (i = 1; i <= 9; i++)
+        {
+            document.write("<tr>");
+            for (j=1; j<=9; j++)
+            {
+                document.write("<td>");
+                document.write(i.toString() + "x" + j.toString() + "=" + (i*j).toString());
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
